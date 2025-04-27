@@ -14,8 +14,7 @@ type fileSizeError struct {
         size    int
 }
 
-// TODO implement the Error method
-// 
+// TODO implement the error interface
 
 func main() {
         // Check if an argument is provided
