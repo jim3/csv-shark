@@ -1,1 +1,3 @@
-# csv-shark
+### First Personal Project
+
+Starting code of my first personal project for Boot.dev (well, *maybe*, *maybe not*) ...at the moment I plan for it to be a CLI tool for analyzing Wireshark CSV exports...only reason I am posting this so early is because I need practice using the Git CLI...
