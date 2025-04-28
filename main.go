@@ -24,8 +24,7 @@ func main() {
 	}
 
 	// TODO: Error checking
-	// - Check if the file has a .csv extension
-	// - Check if the file exists and is readable
+	// - Check if the file exists and is readable and has a .csv extension
 
 	// Get the filename
 	csvFile := os.Args[1]
@@ -52,8 +51,6 @@ func main() {
 		log.Println("Cannot read file:", err)
 	}
 	fmt.Printf("Read %d bytes from file\n", b)
-
-	// func csvShark(string(data)) where you start your function call?
 
 	// Create a csv reader for the Read() method. Read returns a sliced []record
 	r := csv.NewReader(strings.NewReader(string(data)))
