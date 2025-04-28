@@ -1,0 +1,8 @@
+"No.","Time","Source","Destination","Protocol","Length","Info"
+"1","0.000000","192.168.0.173","149.88.17.129","WireGuard","170","Transport Data, receiver=0xF821A996, counter=157, datalen=96"
+"2","0.036720","149.88.17.129","192.168.0.173","WireGuard","394","Transport Data, receiver=0x1989E5F5, counter=165, datalen=320"
+"3","0.077599","192.168.0.173","149.88.17.129","WireGuard","122","Transport Data, receiver=0xF821A996, counter=158, datalen=48"
+"4","0.645539","192.168.0.173","149.88.17.129","WireGuard","122","Transport Data, receiver=0xF821A996, counter=159, datalen=48"
+"5","0.683704","149.88.17.129","192.168.0.173","WireGuard","138","Transport Data, receiver=0x1989E5F5, counter=166, datalen=64"
+"6","1.293213","192.168.0.173","149.88.17.129","WireGuard","122","Transport Data, receiver=0xF821A996, counter=160, datalen=48"
+"7","1.329008","149.88.17.129","192.168.0.173","WireGuard","138","Transport Data, receiver=0x1989E5F5, counter=167, datalen=64"
