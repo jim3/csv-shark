@@ -14,8 +14,6 @@ type fileSizeError struct {
 	size    int
 }
 
-// TODO implement the error interface
-
 func main() {
 	// Check if an argument is provided
 	if len(os.Args) < 2 {
@@ -24,7 +22,7 @@ func main() {
 	}
 
 	// TODO: Error checking
-	// - Check if the file exists and is readable and has a .csv extension
+	// Check if the file exists and is readable and has a .csv extension
 
 	// Get the filename
 	csvFile := os.Args[1]
@@ -65,5 +63,3 @@ func main() {
 		fmt.Println(record) // []string
 	}
 }
-
-// ----------------------------------------------

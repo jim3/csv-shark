@@ -1,13 +1,8 @@
-### First Personal Project
+**Project Ideas**
 
-Starting code of my first personal project for Boot.dev (well, *maybe*, *maybe not*) ...at the moment I plan for it to be a CLI tool for analyzing Wireshark CSV exports...
-
-Example console output after running...
-
+A CLI tool for analyzing Wireshark CSV exports...
 
 ```bash
-Read 33993 bytes from file
-
 [No. Time Source Destination Protocol Length Info]
 [1 0.000000 192.168.0.173 192.168.0.205 SSH 138 Client: Encrypted packet (len=84)]
 [2 0.013521 192.168.0.205 192.168.0.173 TCP 60 22  >  20018 [ACK] Seq=1 Ack=85 Win=13007 Len=0]
