@@ -9,21 +9,16 @@ import (
 	"strings"
 )
 
-type fileSizeError struct {
-	message string
-	size    int
+func printUsage() {
+	fmt.Println("Usage: ./csvshark <FILENAME>.csv")
 }
 
 func main() {
-	// Check if an argument is provided
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: ./csvshark <FILENAME>.csv")
+	if len(os.Args) < 2 || len(os.Args) > 3 {
+		printUsage()
 		return
+
 	}
-
-	// TODO: Error checking
-	// Check if the file exists and is readable and has a .csv extension
-
 	// Get the filename
 	csvFile := os.Args[1]
 
