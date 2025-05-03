@@ -18,8 +18,9 @@ type Packet struct {
 	Info     string
 }
 
-func (p *Packet) NetworkPacket() {
-	fmt.Println(p.Dst) // NICE! 👍🏻🚀🐊👏🏻
+// Filter
+func (p *Packet) PacketFilter() {
+	fmt.Println(p.Dst)
 }
 
 func NewPacket(rows [][]string) []Packet {
@@ -64,10 +65,10 @@ func main() {
 
 	reader := csv.NewReader(file)
 
-	// use Read to remove the header
+	// use Read to remove the csv header row
 	reader.Read()
 
-	// use ReadAll to read the rest of the file
+	// Then use ReadAll to read the rest of the file
 	rows, err := reader.ReadAll()
 	if err != nil {
 		log.Println("Cannot read CSV file:", err)
@@ -76,8 +77,7 @@ func main() {
 	// Construct the struct
 	networkData := NewPacket(rows)
 
-	// To call the method on all Packets, you need a loop:
 	for i := range networkData {
-		networkData[i].NetworkPacket()
+		networkData[i].PacketFilter()
 	}
 }
