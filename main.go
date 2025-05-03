@@ -55,7 +55,7 @@ func main() {
 	// Get the filename
 	csvFile := os.Args[1]
 
-	file, err := os.Open(csvFile) // -> (*os.File, error) file, err := os.Open(csvFile) // -> (*os.File, error)
+	file, err := os.Open(csvFile)
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
@@ -63,9 +63,12 @@ func main() {
 	defer file.Close()
 
 	reader := csv.NewReader(file)
-	reader.Read() // use Read to remove the header
 
-	rows, err := reader.ReadAll() // use ReadAll to read resto file
+	// use Read to remove the header
+	reader.Read()
+
+	// use ReadAll to read the rest of the file
+	rows, err := reader.ReadAll()
 	if err != nil {
 		log.Println("Cannot read CSV file:", err)
 	}
