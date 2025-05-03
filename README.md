@@ -6,7 +6,7 @@
 ## Usage
 
 ```bash
-Usage: ./csvshark <FILENAME>.csv` | `go run main.go ./dump.csv`
+`./csvshark <FILENAME>.csv` | `go run main.go <FILENAME>.csv`
 ```
 
 Plans for command-line flags:
