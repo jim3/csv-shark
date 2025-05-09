@@ -10,7 +10,8 @@
 ```
 
 Plans for command-line flags:
-- `-filter`: Filter by column name
+
+`-filter`: Filter by column name
 
 ```bash
 149.88.17.129
