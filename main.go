@@ -45,8 +45,6 @@ func printUsage() {
 	fmt.Println("Usage: ./csvshark <FILENAME>.csv")
 }
 
-// ----------------------------------------------
-
 func main() {
 	if len(os.Args) < 2 || len(os.Args) > 3 {
 		printUsage()
