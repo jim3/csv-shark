@@ -1,6 +1,6 @@
 ## csvshark
 
-[Go](https://pkg.go.dev/std) CLI tool for analyzing [Wireshark] CSV exports...work in progress...
+[Go](https://pkg.go.dev/std) CLI tool for analyzing [Wireshark] CSV exports...
 
 
 ## Usage
