@@ -6,7 +6,7 @@
 ## Usage
 
 ```bash
-`./csvshark <FILENAME>.csv`
+./csvshark <FILENAME>.csv
 ```
 
 Plans for command-line flags:
