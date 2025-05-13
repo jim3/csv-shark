@@ -9,10 +9,6 @@
 ./csvshark <FILENAME>.csv
 ```
 
-Plans for command-line flags:
-
-`-filter`: Filter by column name
-
 ```bash
 149.88.17.129
 192.168.0.173
@@ -24,5 +20,5 @@ Plans for command-line flags:
 ```
 
 <sub>
-  *Possible* personal project #1 initial rough draft...aka, nowhere near finished...
+  ...
 </sub>
