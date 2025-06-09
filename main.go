@@ -60,13 +60,12 @@ func main() {
 		return
 	}
 	defer file.Close()
-
-	reader := csv.NewReader(file)
-
-	// use Read to remove the csv header row
+	
+	reader := csv.NewReader(file)	
+	// use `Read` to remove the csv header row
 	reader.Read()
 
-	// Then use ReadAll to read the rest of the file
+	// Then use `ReadAll` to read the rest of the file
 	rows, err := reader.ReadAll()
 	if err != nil {
 		log.Println("Cannot read CSV file:", err)
@@ -74,7 +73,6 @@ func main() {
 
 	// Construct the struct
 	networkData := NewPacket(rows)
-
 	for i := range networkData {
 		networkData[i].PacketFilter()
 	}
